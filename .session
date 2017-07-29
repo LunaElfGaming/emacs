@@ -1,0 +1,38 @@
+;;; Automatically generated on Sat Jul 29 21:06:13 2017
+;;; Invoked by lunaelf@lunaelf-ThinkPad-W530 using 24.5.1
+(setq-default kill-ring '("(defun open-initel()
+    (interactive)
+  (find-file \"~/.emacs.d/init.el\"))
+
+(load-theme 'solarized-dark t)
+
+(global-set-key (kbd \"<f4>\") 'open-initel)
+
+(setq-default cursor-type 'bar)
+
+ ;;(global-set-key (kbd \"\\C-c l\") 'org-store-link)
+ ;;(global-set-key (kbd \"\\C-c c\") 'org-capture)
+ (global-set-key (kbd \"\\C-c a\") 'org-agenda)
+(global-set-key (kbd \"\\C-c b\") 'org-iswitchb)
+
+(org-babel-do-load-languages
+    'org-babel-load-languages
+        '(;; other Babel languages
+          (plantuml . t)))
+
+(setq org-plantuml-jar-path
+    (expand-file-name \"~/.emacs.d/plantuml.jar\"))" "https://github.com/LunaElfGaming/.emacs.d.git" #("git remote add origin git@github.com:LunaElfGaming/.emacs.d.git" 0 63 (help-echo "mouse-2: insert after prompt as new input" mouse-face highlight font-lock-face comint-highlight-input front-sticky t fontified t))))
+(setq-default session-file-alist '(("~/.emacs.d/elpa/solarized-theme-1.2.2/solarized-theme-autoloads.el" 664 nil 1 nil nil 664 (overwrite-mode)) ("~/.emacs.d/init.el" 5712 5712 1 nil nil 6740 (overwrite-mode))))
+(setq-default file-name-history '("~/.emacs.d/elpa/solarized-theme-1.2.2/solarized-theme-autoloads.el" "~/.emacs.d/init.el" "~/.emacs.d/emms/history"))
+(setq-default regexp-search-ring '("solariz" ".emacs"))
+(setq-default buffer-name-history '("*shell*"))
+(setq-default command-history '((list-packages nil) (dired "/home/lunaelf/") (kill-buffer "*shell*") (shell nil)))
+(setq-default counsel-git-grep-cmd-history '("git --no-pager grep --full-name -n --no-color -i -e '%s'"))
+(setq-default evil-jumps-history '((5712 "/home/lunaelf/.emacs.d/init.el")))
+(setq-default extended-command-history '(#("list" 0 4 (ivy-index 0)) #("list-pa" 0 7 (ivy-index 0)) #("shell" 0 5 (ivy-index 0))))
+(setq-default ido-file-history '("."))
+(setq-default occur-collect-regexp-history '("\\1"))
+(setq-default serial-name-history '("/dev/ttyS0"))
+(setq-default serial-speed-history '("9600" "1200" "2400" "4800" "14400" "19200" "28800" "38400" "57600" "115200"))
+(setq-default smex-history '(list-packages shell cd 5x5 arp dbx dig))
+(setq-default swiper-history '(#("solariz" 0 7 (ivy-index 1)) #(".emacs" 0 6 (ivy-index 0))))
